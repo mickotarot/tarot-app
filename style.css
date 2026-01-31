@@ -1,97 +1,29 @@
-/* ===== 全体 ===== */
-body {
-  margin: 0;
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-  background: radial-gradient(circle at top, #1b1f3b, #000);
-  color: #f5f5f5;
-  min-height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>1枚引きタロット</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* ===== コンテナ ===== */
-.container {
-  max-width: 420px;
-  margin: 60px auto;
-  padding: 28px;
-  background: rgba(20, 24, 60, 0.9);
-  border-radius: 18px;
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.25);
-  text-align: center;
-}
+  <div class="container">
+    <h1>🔮 1枚引きタロット</h1>
 
-/* ===== タイトル ===== */
-h1 {
-  font-size: 26px;
-  color: #e6dcff;
-  margin-bottom: 20px;
-}
+    <textarea
+      id="questionInput"
+      placeholder="今、占いたいことを書いてください"
+    ></textarea>
 
-/* ===== 入力欄 ===== */
-#questionInput {
-  width: 100%;
-  min-height: 120px;
-  padding: 16px;
-  font-size: 16px;
-  border-radius: 12px;
-  border: none;
-  box-sizing: border-box;
-  background: #ffffff;
-  color: #222;
-}
+    <button id="drawButton">カードを引く</button>
 
-#questionInput::placeholder {
-  color: #777;
-}
+    <div id="result" class="hidden">
+      <h2 id="cardName"></h2>
+      <p id="cardPosition"></p>
+      <p id="cardMessage"></p>
+    </div>
+  </div>
 
-/* ===== ボタン ===== */
-#drawButton {
-  width: 100%;
-  margin-top: 18px;
-  padding: 14px;
-  font-size: 16px;
-  color: #fff;
-  background: linear-gradient(135deg, #7f5cff, #c77dff);
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  box-shadow: 0 0 12px rgba(199, 125, 255, 0.6);
-}
-
-#drawButton:hover {
-  opacity: 0.9;
-  transform: scale(1.03);
-}
-
-/* ===== 結果エリア ===== */
-#result {
-  margin-top: 28px;
-  padding: 22px;
-  background: linear-gradient(180deg, #2b2f55, #14162e);
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
-}
-
-/* カード名 */
-#cardName {
-  color: #ffd700;
-  font-size: 22px;
-  margin-bottom: 6px;
-}
-
-/* 正逆位置 */
-#cardPosition {
-  color: #c7c9ff;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
-/* メッセージ */
-#cardMessage {
-  color: #ffffff;
-  line-height: 1.7;
-  font-size: 16px;
-}
-
-/* ===== 非表示 ===== */
-.hidden {
-  display: none;
-}
+  <script src="script.js"></script>
+</body>
+</html>
