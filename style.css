@@ -95,3 +95,11 @@ button:hover {
     padding: 18px;
   }
 }
+input {
+  color: #333;
+  background: white;
+}
+
+input::placeholder {
+  color: #999;
+}
