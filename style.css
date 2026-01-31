@@ -64,6 +64,13 @@ h1 {
 #result p {
   color: #222;
 }
+/* ===== 強制的に文字を見せる ===== */
+#result,
+#result h2,
+#result p {
+  color: #222 !important;
+  background: #ffffff !important;
+}
 
 /* ===== 非表示 ===== */
 .hidden {
