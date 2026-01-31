@@ -97,6 +97,14 @@ input {
   color: #333;
   background: white;
 }
+#questionInput {
+  width: 100%;
+  height: 60px;          /* 高さを大きく */
+  font-size: 18px;       /* 文字を大きく */
+  padding: 16px;         /* 内側の余白 */
+  box-sizing: border-box;
+}
+
 
 input::placeholder {
   color: #999;
