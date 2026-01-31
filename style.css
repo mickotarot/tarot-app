@@ -60,17 +60,12 @@ h1 {
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
-#result h2,
-#result p {
-  color: #222;
+
 }
 /* ===== 強制的に文字を見せる ===== */
 #result,
 #result h2,
-#result p {
-  color: #222 !important;
-  background: #ffffff !important;
-}
+
 /* ===== タロット結果を必ず読めるようにする ===== */
 #result {
   background: linear-gradient(180deg, #1e2450, #0f132f);
