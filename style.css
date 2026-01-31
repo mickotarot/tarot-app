@@ -71,6 +71,28 @@ h1 {
   color: #222 !important;
   background: #ffffff !important;
 }
+/* ===== タロット結果を必ず読めるようにする ===== */
+#result {
+  background: linear-gradient(180deg, #1e2450, #0f132f);
+  color: #f8f8ff;
+}
+
+#cardName {
+  color: #ffd700; /* 金色 */
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+#cardPosition {
+  color: #c7c9ff;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+#cardMessage {
+  color: #ffffff;
+  line-height: 1.7;
+}
 
 /* ===== 非表示 ===== */
 .hidden {
