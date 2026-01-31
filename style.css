@@ -112,6 +112,71 @@ input::placeholder {
 #questionInput {
   width: 120%;
   min-height: 130px;
+  body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  background: radial-gradient(circle at top, #1b1f3b, #000);
+  color: #f5f5f5;
+}
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.25);
+}
+#drawButton {
+  width: 100%;
+  padding: 14px;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #7f5cff, #c77dff);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(199, 125, 255, 0.6);
+}
+
+#drawButton:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+#result {
+  margin-top: 24px;
+  padding: 20px;
+  background: linear-gradient(180deg, #2b2f55, #14162e);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#questionInput {
+  width: 100%;
+  min-height: 120px;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+#questionInput::placeholder {
+  color: #ccc;
+}
+
   font-size: 18px;
   padding: 18px;
   box-sizing: border-box;
