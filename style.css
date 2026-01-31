@@ -23,6 +23,45 @@
       <p id="cardMessage"></p>
     </div>
   </div>
+/* ===== スマホ専用調整 ===== */
+@media screen and (max-width: 600px) {
+
+  body {
+    padding: 16px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  #questionInput {
+    min-height: 140px;
+    font-size: 16px;
+  }
+
+  #drawButton {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  #cardName {
+    font-size: 20px;
+  }
+
+  #cardMessage {
+    font-size: 16px;
+  }
+}
+
 
   <script src="script.js"></script>
 </body>
