@@ -81,6 +81,13 @@ h1 {
   line-height: 1.6;
 }
 
+/* ===== 結果テキストを必ず見える色にする ===== */
+#result,
+#result h2,
+#result p {
+  color: #222222 !important;
+}
+
 /* ===== 非表示 ===== */
 .hidden {
   display: none;
