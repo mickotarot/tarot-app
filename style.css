@@ -21,7 +21,6 @@ button {
   border: none;
   border-radius: 8px;
   background: #7c3aed;
-  color: white;
   cursor: pointer;
 }
 
@@ -50,7 +49,6 @@ h1 {
 
 button {
   background: #ff8fb1;
-  color: white;
   border: none;
   border-radius: 30px;
   padding: 15px 30px;
