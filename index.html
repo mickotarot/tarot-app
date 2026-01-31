@@ -6,24 +6,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-   <h1>🔮願いの星図監修　1枚引きタロット</h1>
 
-<input
-  type="text"
-  id="questionInput"
-  placeholder="今、占いたいことを書いてください"
->
+<div class="container">
+  <h1>🔮願いの星図監修　1枚引きタロット</h1>
+  <p>今、占いたいことを書いてからカードを引いてください。</p>
 
-<button id="drawButton">カードを引く</button>
+  <input
+    type="text"
+    id="questionInput"
+    placeholder="今、占いたいことを書いてください"
+  >
 
-    <div id="result" class="hidden">
-      <h2 id="cardName"></h2>
-      <p id="cardPosition"></p>
-      <p id="cardMessage"></p>
-    </div>
+  <button id="drawButton">カードを引く</button>
+
+  <div id="result" class="hidden">
+    <h2 id="cardName"></h2>
+    <p id="cardPosition"></p>
+    <p id="cardMessage"></p>
   </div>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
